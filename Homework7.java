@@ -4,7 +4,13 @@ public class Homework7 {
 	 * from 1 to x and return the result
 	 */
 	public static int problem1(int x) {
-
+		int bob = 0;
+		int john = 1;
+		while(john <= x) {
+			bob += john;
+			john++;
+		}
+		return bob;
 	}
 
 	/* Use a loop (while or for) to find the
@@ -14,7 +20,15 @@ public class Homework7 {
 	 * use that method, you must use a loop
 	 */
 	public static int problem2(String s, String t) {
-
+		int man = 0;                         //butterman tter
+		while(man <= s.length() - t.length()) {
+			String uma = s.substring(man, t.length() + man);
+			if(uma.equals(t)) {
+				return man;
+			}
+				man++;
+		}
+		return -1;
 	}
 
 	/* Use a loop (while or for) to calculate and
@@ -22,7 +36,11 @@ public class Homework7 {
 	 * power
 	 */
 	public static int problem3(int a, int b) {
-
+		int abby = a;
+		for(int i = 2; i <= b; i++) {
+			a *= abby;
+		}
+		return a;
 	}
 
 	/* Use a loop (while or for) to calculate and
@@ -30,7 +48,12 @@ public class Homework7 {
 	 * b (i.e., calculate a / b using a loop)
 	 */
 	public static int problem4(int a, int b) {
-
+		int conner = 0;
+		while(a > b) {
+			a -= b;
+			conner++;
+		}
+		return conner;
 	}
 
 	/* Use a loop (while or for) to calculate and
@@ -38,7 +61,10 @@ public class Homework7 {
 	 * (i.e., calculate a % b using a loop)
 	 */
 	 public static int problem5(int a, int b) {
-
+		 while(a > b) {
+			 a -= b;
+		 }
+		 return a;
 	 }
 
 	public static void main(String[] args) {
